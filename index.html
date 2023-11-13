@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bceb02ec99.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo" alt="" class="logo"> -->
+                <h2 class="logo">S<span>ameer.</span></h2>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <!-- <li><a href="#">Services</a></li> -->
+                    <li><a href="#portfolio" onclick="closemenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <!-- <i class="fa-solid fa-bars"></i> -->
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p class="fe"> Full Stack Developer</p>
+                <h1>Hi,I'm <span>Sameer</span><br>Mohammad</h1>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ----------about----------------->
+    <div id="about">
+        <div id="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/p.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Mohammad Sameer, an ambitious Computer Science Engineering student at Gokaraju Rangaraju Institute of Engineering and Technology, Hyderabad. Proficient in a diverse tech stack including front-end development, SQL, Java, MongoDB, and Python.I'm a quick learner and collaborate closely with clients to create efficient scalable, and user- friendly solutions that solve real- world problems. Let's work together to bring your ideas to life!
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>JAVA</span></li>
+                            <li><span>Python</span></li>
+                            <li><span>React</span></li>
+                            <li><span>mongoDb</span></li>
+                            <li><span>MySQL</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>Bootstrap</span></li>
+                            <li><span>CSS</span></li>
+                            
+                            
+                            <li><span>JavaScript</span></li>
+                            <!-- <li><span>web Development</span><br>Building ios apps</li>
+                            <li><span>web Development</span><br>Building ios apps</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>05/2023-06/2023</span><br>web development Intern at InternPe</li>
+                            <!-- <li><span>web Development</span><br>Building ios apps</li>
+                            <li><span>web Development</span><br>Building ios apps</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-Present</span><br> Computer Science Engineering at Gokaraju Rangaraju Institute of Engineering and Technology</li>
+                            <li><span>2018-2020</span><br>Intermediate at Narayana Junior Collge</li>
+                            <!-- <li><span>web Development</span><br>Building ios apps</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- ______________--porfolio------------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Aqua.gif">
+                <div class="layer">
+                    <h3>Zax(Zonal Artifical eXpert) Using AI</h3>
+                    <p>ZAX is a virtual assistant for GRIET that provides information about the
+                        institute and in particular about the department</p>
+                    <a href="https://youtu.be/W-a9jE5-KHM?si=b0TeDk3sbsl5fXl-"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Netflix-Symbol.png">
+                <div class="layer">
+                    <h3>Netflix Front-End Clone</h3>
+                    <p>This project is a front-end clone of the Netflix interface, developed as a part of my web development portfolio. The goal was to replicate the Netflix homepage, incorporating responsive design and interactive elements.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/weather prot.png">
+                <div class="layer">
+                    <h3>WeatherNow</h3>
+                    <p>Experience real-time weather updates with WeatherNow, a sleek and user-friendly weather application built with HTML, CSS, and JavaScript.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/r.png">
+                <div class="layer">
+                    <h3>React To-Do List</h3>
+                    <p>The React To-Do List is a web application that allows users to create, manage, and track their tasks in an organized manner</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="vn">See more</a>
+    </div>
+</div>
+
+
+<!-- // --------------------------contact-------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>md477959@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 7093971373</p>
+                <div class="social-icons">
+                    <!-- <a href=""><i class="fab fa-facebook"></i></a> -->
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="linkedin.com/in/mohammad-sameer-12b7b9206"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/mdsameer-24"><i class="fa-brands fa-github"></i></a>
+    
+                </div>
+                <div class="sbs">
+                <a href="images/Resume.pdf" download class="btn btn2">Dowload Resume</a>
+            </div>
+            </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea type="Message" name="Message"rows="6" placeholder="Your Message"></textarea>
+               <div class="cbc">
+            <button type="submit" class="abc">Submit</button>  
+        </div>          
+            </form>
+            <span id="msg"></span>
+
+          </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2023. Made <i class="fas_fa-heart"></i> by Sameer Mohammad</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+     
+     var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname) {
+    for(tablink of tablinks){
+    tablink.classList.remove("active-link");
+}
+for (tabcontent of tabcontents) {
+tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+
+ 
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwz9jfydmZm-TnRtz8mvdMGO_TbVqPGMO6cXDrDqSOUxjnCze9BEXQsNI2bAy_WDgU/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            
+            .then(response => {
+msg.innerHTML = "Message sent successfully"
+setTimeout(function(){
+msg.innerHTML=""
+},5000)
+form.reset()
+})
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script>
+        var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+    sidemeu.style.right = "0";
+    }
+function closemenu() {
+sidemeu.style.right = "-200px";
+}
+
+      </script>
+    
+</body>
+</html>
